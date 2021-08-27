@@ -1,5 +1,6 @@
 body{
     margin:0;
+    min-width:700px;
 }
 
 /*intro part*/
@@ -17,7 +18,6 @@ p{
 /*layout*/
 header{
     background-color:rgba(0, 255, 251, 0.1);
-    min-width:700px;
 }
 
 .aboutme-container{
