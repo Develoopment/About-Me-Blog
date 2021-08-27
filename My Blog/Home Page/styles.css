@@ -1,0 +1,152 @@
+body{
+    margin:0;
+}
+
+/*intro part*/
+
+/*typography*/
+.aboutme-title{
+    font-size:6em;
+    margin:0;
+}
+
+p{
+    font-size:1.3rem;
+}
+
+/*layout*/
+header{
+    background-color:rgba(0, 255, 251, 0.1);
+    min-width:700px;
+}
+
+.aboutme-container{
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:rgb(0, 81, 128);
+}
+
+.aboutme-info-container{
+    width:50%;
+}
+
+.aboutme-profilepic{
+    width:45%;
+    margin:2em 5em 2em 0;
+}
+
+
+
+/*links to seperate blogs*/
+/*typography*/
+.links-container{
+    background-color:rgba(0, 200, 255, 0.4);
+}
+
+a{
+    text-decoration:none;
+    color:rgb(0, 81, 128);
+}
+
+h2{
+    border:5px solid rgb(0, 81, 128);
+    border-radius:50%;
+    height:8em;
+    width:8em;
+    font-size:2em;
+    font-family: 'Open Sans', sans-serif;
+    transition:background-color 0.5s;
+}
+
+.link-1{
+    background-color:rgb(223, 20, 20);
+}
+
+.link-2{
+    background-color:rgb(75, 240, 42);
+}
+
+.link-3{
+    background-color:rgb(42, 161, 240);
+}
+
+h2:hover{
+    background-color:rgba(0, 200, 255, 0);
+}
+
+/*layout*/
+.links-container{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+h2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/*footer*/
+/*typgraphy and layout*/
+footer{
+    height:7em;
+    background-color:black;
+    padding-right:1.5em;
+    padding-top:1.5em;
+}
+
+footer p{
+    margin:0;
+    color:white;
+    text-align:right;
+}
+
+/*media queries*/
+/*intro part*/
+@media (max-width:826px){
+    /*header*/
+    .aboutme-container{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .aboutme-profilepic{
+        margin:0;
+        margin-top:2em;
+    }
+
+    .aboutme-title{
+        font-size:5em;
+        text-align:center;
+    }
+    
+    .aboutme-info{
+        text-align:center;
+    }
+
+    /*links*/
+    .links-container{
+        min-width:700px;
+        flex-direction:column;
+    }
+
+
+    .link-1:hover{
+        background-color:rgb(255, 0, 0);
+    }
+
+    .link-2:hover{
+        background-color:rgb(43, 255, 0);
+    }
+
+    .link-3:hover{
+        background-color:rgb(18, 183, 248);;
+    }
+
+    /*footer*/
+    footer{
+        min-width:700px;
+    }
+}
